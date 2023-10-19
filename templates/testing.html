@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Testing</title>
+{% endblock head %}
+
+{% block body %}
+    <h1>Testing</h1>
+    <p>Use this page to test Selenium Scripts</p>
+    <div class="tests-container">
+        <div class="test test1">
+            <h2>Test 1</h2>
+            <p>Enter some text in the provided input box, and the provided output should reflect these changes.</p>
+            <input type="text" id="test1-input" oninput="test1()">
+            <p>Value: <span id="test1-output"></span></p>
+        </div>
+        <div class="test test2">
+            <h2>Test 2</h2>
+            <p>Click the button to increment the counter by 1, and the provided output should reflect these changes.</p>
+            <button id="test2-button" onclick="test2()">click!</button>
+            <p>Value: <span id="test2-output">0</span></p>
+        </div>
+        <div class="test test3">
+            <h2>Test 3</h2>
+            <p>Click the button to reset the counter to 0, and the provided output should reflect these changes.</p>
+            <button id="test3-button" onclick="test3()">click!</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/testing.js') }}"></script>
+{% endblock body %}
