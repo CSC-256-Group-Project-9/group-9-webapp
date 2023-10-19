@@ -2,3 +2,4 @@ venv
 .code
 .idea
 .env
+__pycache__

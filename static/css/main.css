@@ -30,3 +30,13 @@ div.tests-container {
 div.radios {
     text-align: center;
 }
+
+table {
+    margin: auto;
+    background-color: black;
+}
+
+td {
+    padding: 5px;
+    background-color: white;
+}

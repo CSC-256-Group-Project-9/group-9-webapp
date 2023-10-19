@@ -33,6 +33,12 @@ def about_us():
 def contact():
     return render_template('contact.html')
 
+
+@app.route('/endpoints')
+def endpoints():
+    return render_template('endpoints.html')
+
+
 @app.post("/api/students")
 def create_students():
     data = request.get_json()
@@ -44,6 +50,7 @@ def create_students():
             cursor.execute(queries.ADD_STUDENT, (fname,lname,))
             student_id = cursor.fetchone()[0]
     return {"id": student_id, "message": f"Student {fname} {lname} added to database"}, 201
+
 
 @app.get("/api/students/all")
 def get_students():
