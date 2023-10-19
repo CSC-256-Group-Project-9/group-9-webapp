@@ -26,3 +26,7 @@ div.test {
 div.tests-container {
     display: inline-flex;
 }
+
+div.radios {
+    text-align: center;
+}
