@@ -25,6 +25,20 @@
             <p>Click the button to reset the counter to 0, and the provided output should reflect these changes.</p>
             <button id="test3-button" onclick="test3()">click!</button>
         </div>
+        <div class="test test4">
+            <h2>Test 4</h2>
+            <p>Click the radio button of your favorite language and the provided output should reflect these changes.</p>
+            <div class="radios">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                <button id="test4-button" onclick="test4()">submit!</button>
+                <div id="result"></div>
+            </div> 
+        </div>
     </div>
     <script src="{{ url_for('static', filename='js/testing.js') }}"></script>
 {% endblock body %}

@@ -10,6 +10,7 @@ let test3_button = document.querySelector('#test3-button')
 // outputs
 let test1_output = document.querySelector('#test1-output')
 let test2_output = document.querySelector('#test2-output')
+let test4_output = document.querySelector('#test4-output')
 
 function test1() {
     test1_value = test1_input.value
@@ -24,4 +25,14 @@ function test2() {
 function test3() {
     test2_value = 0
     test2_output.textContent = test2_value
+}
+
+function test4() {
+    var ele = document.getElementsByName('fav_language');
+
+    for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked)
+            document.getElementById("result").innerHTML
+                = "Favorite Language: " + ele[i].value;
+    }
 }
