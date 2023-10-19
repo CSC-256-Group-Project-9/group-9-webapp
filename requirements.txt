@@ -1,2 +1,5 @@
-flask
+Flask
 flask-sqlalchemy
+Python-dotenv
+virtualenv
+psycopg2-binary
