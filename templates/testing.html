@@ -34,10 +34,17 @@
                 <input type="radio" id="css" name="fav_language" value="CSS">
                 <label for="css">CSS</label><br>
                 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
+                <label for="javascript">JavaScript</label><br>
                 <button id="test4-button" onclick="test4()">submit!</button>
                 <div id="result"></div>
             </div> 
+        </div>
+        <div class="test test5">
+            <h2>Test 5</h2>
+            <p>add items to list, and the provided output should reflect these changes.</p>
+            <input type="text" id="test5-input"><br>
+            <button id="test5-button" onclick="test5()">click!</button>
+            <p id="list-contents"></p>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/testing.js') }}"></script>
