@@ -1,4 +1,10 @@
 venv
 .code
 .idea
+<<<<<<< HEAD
 __pycache__
+=======
+.env
+__pycache__
+.vercel
+>>>>>>> 2b25bc390bf67a179c1d4b05800a006758ff34dd
