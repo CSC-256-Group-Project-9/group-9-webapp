@@ -2,6 +2,7 @@
 
 {% block head %}
     <title>Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 {% endblock head %}
 
 {% block body %}
@@ -25,6 +26,8 @@
             <p>Click the button to reset the counter to 0, and the provided output should reflect these changes.</p>
             <button id="test3-button" onclick="test3()">click!</button>
         </div>
+    </div>
+    <div class="tests-container">
         <div class="test test4">
             <h2>Test 4</h2>
             <p>Click the radio button of your favorite language and the provided output should reflect these changes.</p>
@@ -34,7 +37,7 @@
                 <input type="radio" id="typescript" name="fav_language" value="TypeScript">
                 <label for="typescript">TypeScript</label><br>
                 <input type="radio" id="java" name="fav_language" value="Java">
-                <label for="Java">Java</label><br>
+                <label for="java">Java</label><br>
                 <input type="radio" id="python" name="fav_language" value="Python">
                 <label for="python">Python</label><br>
                 <input type="radio" id="golang" name="fav_language" value="Golang">
