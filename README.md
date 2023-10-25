@@ -3,7 +3,7 @@
 
 ### Links for WebApp
 - [Unofficial](https://group-9-unofficial.vercel.app/) - The base version of the WebApp for inital testing - DEPRECATED
--[Official](https://group-9-webapp-official.vercel.app/) - Current Official version of WebApp, updates with each Repo merge
+- [Official](https://group-9-webapp-official.vercel.app/) - Current Official version of WebApp, updates with each Repo merge
 
 ### Current Ideas:
   - Create a WebApp with a HTML/JS (maybe react) Front End with a Python backend using Flask
