@@ -53,6 +53,25 @@
             <button id="test5-button" onclick="test5()">click!</button>
             <p id="list-contents"></p>
         </div>
+        <div class="test test6">
+            <h2>Test 6</h2>
+            <p>Dropdown Menu developed using TDD</p>
+            <label for="students">Select a student:</label>
+
+            <select name="student" id="student">
+              <option value="branch">Branch</option>
+              <option value="cawlfield">Cawlfield</option>
+              <option value="epps">Epps</option>
+              <option value="henderson">Henderson</option>
+              <option value="leach">Leach</option>
+              <option value="slaczka">Slaczka</option>
+              <option value="smedberg">Semdberg</option>
+              <option value="walker">Walker</option>
+              <option value="west">West</option>
+            </select> 
+        </div>
+
+
     </div>
     <script src="{{ url_for('static', filename='js/testing.js') }}"></script>
 {% endblock body %}
