@@ -44,3 +44,11 @@ function test5() {
     test5_list.push(test5_input.value)
     document.getElementById("list-contents").innerHTML = test5_list
 }
+
+//Dropdown menu
+function test6() {
+    var dd = document.getElementById("student");
+    let ddvalue = dd.options[dd.selectedIndex].text;
+    let content = document.getElementById("ddcontent");
+    content.textContent = ddvalue
+}
