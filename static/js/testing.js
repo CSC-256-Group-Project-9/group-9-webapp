@@ -45,7 +45,7 @@ function test5() {
     document.getElementById("list-contents").innerHTML = test5_list
 }
 
-//Dropdown menu
+//Dropdown menu test
 function test6() {
     var dd = document.getElementById("student");
     let ddvalue = dd.options[dd.selectedIndex].text;
